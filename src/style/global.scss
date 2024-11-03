@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-title,
+.menu-section {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.menu-title {
+    padding-block: 25px 15px;
+    margin-top: 85px;
+    font-weight: bold;
+}
+    
+.menu-section-body {
+    min-height: 100vh;
+    position: relative;
+    background: url('@/assets/caffetteria_bg.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+}
