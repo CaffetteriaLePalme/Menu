@@ -5,7 +5,7 @@
     </div> -->
     <div class="menu-item_row">
       <div class="menu-item_row_name">
-        - {{ name }}
+        {{ name }}
       </div>
       <div class="menu-item_row_price">
         {{ price }}

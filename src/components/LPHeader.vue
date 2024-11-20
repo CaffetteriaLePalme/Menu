@@ -4,14 +4,14 @@
         <img src="@/assets/menu.svg" @click="toggleMenu">
       </div>
       <div class="header_logo">
-        LOGO LEPALME
+        <img src="@/assets/logo_lepalme.png" />
       </div>
     </div>
     <div class="left-menu" v-if="showLeftMenu">
       <div class="left-menu-header">
         <img src="@/assets/close.svg" @click="toggleMenu">
         <div class="left-menu-header_logo">
-          LOGO LEPALME
+          <img src="@/assets/logo_lepalme.png" />
         </div>
       </div>
       <div class="left-menu-list">
@@ -48,7 +48,7 @@ export default defineComponent({
 <style lang="scss">
 .header {
   background: rgba(0,0,0);
-  padding: 25px;
+  padding: 0 25px;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -64,6 +64,12 @@ export default defineComponent({
       width: 35px;
     }
   }
+
+  .header_logo {
+    img {
+      max-width: 125px;
+    }
+  }
 }
 
 .left-menu {
@@ -76,7 +82,7 @@ export default defineComponent({
   background: rgba(0, 0, 0,0.95);
   color: #fff;
   transition: width 0.3s ease-in;
-  padding: 25px;
+  padding: 0 25px;
 
   .left-menu-header {
     display: flex;
@@ -86,6 +92,13 @@ export default defineComponent({
 
     img {
       width: 35px;
+    }
+  }
+
+  .left-menu-header_logo {
+    img {
+      width: 125px;
+      max-width: 125px;
     }
   }
 
